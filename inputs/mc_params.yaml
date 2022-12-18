@@ -1,0 +1,89 @@
+
+
+Motor:
+  Thrust:
+    type: normal
+    params: [1500, 100]
+  Burnout:
+    type: lognormal
+    params: [1.5,.3]
+  NGrains:
+    type: lognormal
+    params: [1.7, .2]
+  GrainSep:
+    type: normal
+    params: [.005, .0005]
+  GrainDen:
+    type: normal
+    params: [1815, 200]
+  NozzleRad:
+    type: normal
+    params: [.033, .001]
+  ThroatRad:
+    type: normal
+    params: [.011, .001]
+Rocket:
+  Radius:
+    type: normal
+    params: [.0635, 0.01]
+  Mass:
+    type: lognormal
+    params: [2.5, .4]
+  InertiaI:
+    type: normal
+    params: [6.6, 0.1]
+  InertiaZ:
+    type: normal
+    params: [0.0351, 0.001]
+  DistNozzle:
+    type: normal
+    params: [-1.225, 0.1]
+  DistProp: 
+    type: normal
+    params: [-.85704, .01]
+Nose:
+  Length:
+    type: normal
+    params: [0.55829, 0.02]
+  DistCM:
+    type: normal
+    params: [0.71971, 0.05]
+Fin:
+  NFins:
+    type: lognormal
+    params: [1.6, .25]
+  Span:
+    type: normal
+    params: [0.1, 0.01]
+  RootChord:
+    type: normal
+    params: [0.12, 0.01]
+  TipChord:
+    type: normal
+    params: [0.04, 0.001]
+  DistCM:
+    type: normal
+    params: [-1.04956, 0.02]
+Tail:
+  TopRad:
+    type: normal
+    params: [0.0635, 0.01]
+  BotRad:
+    type: normal
+    params: [0.0435, 0.01]
+  Length:
+    type: normal
+    params: [0.06, 0.005]
+  DistCM:
+    type: normal
+    params: [.15, .02]
+Flight:
+  Incline:
+    type: uniform
+    params: [15, 75]
+  Heading:
+    type: uniform
+    params: [44, 46]
+
+
+
